@@ -11,8 +11,8 @@
             <a href="#" class="btn">Portfolio</a>
           </div>
           <div class="home-img">
-            <div class="img-box">
-              <img src="@/assets/programmer.png" alt="programmer-img" />
+            <div class="">
+              <img src="@/assets/programmer6.png" alt="programmer-img" />
             </div>
           </div>
         </div>

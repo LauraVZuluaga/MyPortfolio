@@ -1,5 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <app-about></app-about>
 </template>
+
+<script>
+
+import AppAbout from "@/components/AppAbout.vue";
+export default {
+  components: {
+    AppAbout,
+  },
+}
+</script>
+
+<style>
+
+</style>

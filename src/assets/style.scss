@@ -90,7 +90,7 @@ section {
 }
 
 .main {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -109,10 +109,10 @@ section {
 }
 
 /*Custom Scrollbar*/
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: var(--white);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
 /*End Custom Scrollbar*/
@@ -164,13 +164,13 @@ section {
   padding: 120px 0;
 }
 
-.home-text,
 .home-img {
-  width: 50%;
-  padding: 15px;
+  width: 55%;
 }
 
 .home-text {
+  width: 45%;
+  padding: 15px;
   & p {
     font-size: 18px;
   }
@@ -202,3 +202,28 @@ section {
   border-radius: 50%;
 }
 /*End Home Section*/
+
+/*Section Title*/
+.sec-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  & h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+}
+/*End Section Title*/
+
+/*About Section*/
+.about-img {
+  background-color: red;
+}
+.about-text {
+  background-color: blue;
+}
+/*End About Section*/
