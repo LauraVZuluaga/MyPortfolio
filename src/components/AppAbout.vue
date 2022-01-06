@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <section class="about-section sec-padding">
       <div class="container">
         <div class="row">
@@ -15,10 +15,19 @@
           </div>
           <div class="about-text">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
-              minus fugiat excepturi odit eligendi quam necessitatibus ullam
-              recusandae facere distinctio tenetur repellat hic totam
-              consequuntur qui dolorem eveniet, eum molestias!
+              Hello, again! I am (almost... I'm looking forward to my
+              graduation, how exciting) a Systems Engineer dedicated to frontend
+              development. Making people happy through technology is an honor
+              😊, and I'm from Colombia. I love reading, dancing, laughing,
+              spending time with the people I love and learning new things.
+            </p>
+            <br />
+            <p>
+              ¡Hola, de nuevo! Soy (casi... estoy esperando mi graduación, qué
+              emocionante) una Ingeniera de Sistemas, dedicado al desarrollo
+              frontend. Hacer feliz a la gente a través de la tecnología es un
+              honor 😊, y soy de Colombia. Me encanta leer, bailar, reír, pasar
+              tiempo con las personas que quiero y aprender cosas nuevas.
             </p>
             <h3>Skills</h3>
             <div class="skills">
@@ -34,8 +43,8 @@
                 class="tab-item"
                 :class="disabled ? 'active' : ''"
                 v-on:click="seeInfo"
-                >Education </app-button
-              >
+                >Education
+              </app-button>
               <app-button
                 type="button"
                 class="tab-item"
@@ -55,11 +64,19 @@
                     <span> Universidad de Caldas </span>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Iusto quas dolore expedita exercitationem tempore beatae
-                    pariatur, ad unde eligendi sit tenetur reprehenderit
-                    deleniti asperiores? Maiores ex sit voluptatum doloribus
-                    nulla?
+                    My training as an engineer and programmer started here. It
+                    has not been an easy path, but Systems Engineering changed
+                    my way of seeing the world, and I am happy with that. My
+                    greatest desire is to help people to have a better quality
+                    of life through technology.
+                  </p>
+                  <br />
+                  <p>
+                    Mi formación como ingeniera y programadora comenzó aquí. No
+                    ha sido un camino fácil, pero la Ingeniería de Sistemas
+                    cambió mi forma de ver el mundo, y estoy contenta con ello.
+                    Mi mayor deseo es ayudar a las personas a tener una mejor
+                    calidad de vida a través de la tecnología.
                   </p>
                 </div>
                 <div class="timeline-item">
@@ -69,11 +86,17 @@
                     <span> Escuela Superior de Manizales </span>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Iusto quas dolore expedita exercitationem tempore beatae
-                    pariatur, ad unde eligendi sit tenetur reprehenderit
-                    deleniti asperiores? Maiores ex sit voluptatum doloribus
-                    nulla?
+                    The school's mission is to train teachers for elementary
+                    school children. I learned not only what it takes to get
+                    into college, but the magic and importance of not giving up
+                    being a kid at heart even as the years go by.
+                  </p>
+                  <br />
+                  <p>
+                    La misión de la escuela es formar profesores para niños de
+                    primaria. Aprendí no sólo lo que se necesita para entrar en
+                    la universidad, sino la magia y la importancia de no dejar
+                    de ser un niño de corazón aunque pasen los años.
                   </p>
                 </div>
               </div>
@@ -90,11 +113,18 @@
                     <span> TEK Soluciones Tecnológicas </span>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Iusto quas dolore expedita exercitationem tempore beatae
-                    pariatur, ad unde eligendi sit tenetur reprehenderit
-                    deleniti asperiores? Maiores ex sit voluptatum doloribus
-                    nulla?
+                    My first real-world experience with VueJS. Creating a custom
+                    CRM is quite a challenge and even more so in a company that
+                    has areas with such different tasks. I have learned a lot
+                    about the framework, user experience and teamwork.
+                  </p>
+                  <br />
+                  <p>
+                    Mi primera experiencia en el mundo real con VueJS. Crear un
+                    CRM a la medida es todo un reto y más en una empresa que
+                    tiene áreas con tareas tan diferentes. He aprendido
+                    muchísimo del framework, de la experiencia de usuario y el
+                    trabajo en equipo.
                   </p>
                 </div>
                 <div class="timeline-item">
@@ -104,11 +134,21 @@
                     <span> Universidad de Caldas </span>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Iusto quas dolore expedita exercitationem tempore beatae
-                    pariatur, ad unde eligendi sit tenetur reprehenderit
-                    deleniti asperiores? Maiores ex sit voluptatum doloribus
-                    nulla?
+                    My main tool was WordPress, however, for the same reason I
+                    had to learn HTML, CSS and Javascript, templates limit your
+                    possibilities. Also, I attended meetings with clients to
+                    understand their needs; I helped create a small agile
+                    methodology system, based on agilUC, and I learned a lot
+                    from it.
+                  </p>
+                  <br />
+                  <p>
+                    Mi herramienta principal era WordPress, sin embargo, por la
+                    misma razón tuve que aprender HTML, CSS y Javascript, las
+                    plantillas te limitan las posibilidades. También, asistía a
+                    las reuniones con clientes para entender sus necesidades;
+                    ayudé a crear un pequeño sistema de metodología ágil, basado
+                    en agilUC, y aprendí mucho de ello.
                   </p>
                 </div>
               </div>

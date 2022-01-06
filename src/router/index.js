@@ -18,6 +18,14 @@ const routes = [
       title: "About me",
     },
   },
+  {
+    path: "/portfolio",
+    name: "Portfolio",
+    component: () => import("@/views/Portfolio.vue"),
+    meta: {
+      title: "Portfolio",
+    },
+  },
 ]
 
 const router = new VueRouter({

@@ -7,8 +7,21 @@
             <p>Hello, I'm</p>
             <h1>Laura Zuluaga</h1>
             <h2>Frontend Developer</h2>
-            <a href="#" class="btn">More about me</a>
-            <a href="#" class="btn">Portfolio</a>
+            <p
+              style="margin-bottom: 21px !important; font-size: 12px !important"
+            >
+              (Sorry for the inconvenience, I am still working on this project).
+            </p>
+            <a href="#" class="btn"
+              ><router-link :to="{ name: 'About' }"
+                >More about me
+              </router-link></a
+            >
+            <a href="#" class="btn"
+              ><router-link :to="{ name: 'Portfolio' }"
+                >Portfolio
+              </router-link></a
+            >
           </div>
           <div class="home-img">
             <div class="">
