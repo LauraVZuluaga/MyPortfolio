@@ -9,8 +9,8 @@
         </div>
         <div class="row">
           <div class="about-img">
-            <div class="img-box">
-              <img src="@/assets/about.png" alt="about image" />
+            <div class="">
+              <img src="@/assets/about(2).png" alt="about image" />
             </div>
           </div>
           <div class="about-text">
