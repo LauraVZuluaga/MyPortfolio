@@ -28,6 +28,92 @@
               <div class="skill-item">VueJs</div>
               <div class="skill-item">Bootstrap</div>
             </div>
+            <div class="about-tabs">
+              <app-button
+                type="button"
+                class="tab-item"
+                :class="disabled ? 'active' : ''"
+                v-on:click="seeInfo"
+                >Education </app-button
+              >
+              <app-button
+                type="button"
+                class="tab-item"
+                :class="!disabled ? 'active' : ''"
+                v-on:click="seeInfo"
+                >Experience</app-button
+              >
+            </div>
+
+            <!------ Education Section ----->
+            <div class="tab-content" id="education" v-if="disabled">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date"> 2016 - 2021 </span>
+                  <h4>
+                    Computer and Systems Engineering -
+                    <span> Universidad de Caldas </span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto quas dolore expedita exercitationem tempore beatae
+                    pariatur, ad unde eligendi sit tenetur reprehenderit
+                    deleniti asperiores? Maiores ex sit voluptatum doloribus
+                    nulla?
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date"> 2015 </span>
+                  <h4>
+                    Academic Degree -
+                    <span> Escuela Superior de Manizales </span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto quas dolore expedita exercitationem tempore beatae
+                    pariatur, ad unde eligendi sit tenetur reprehenderit
+                    deleniti asperiores? Maiores ex sit voluptatum doloribus
+                    nulla?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!------ End Education Section ----->
+
+            <!------- Experience Section -------->
+            <div class="tab-content" id="experience" v-if="!disabled">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date"> 2020 - Now </span>
+                  <h4>
+                    Frontend Developer -
+                    <span> TEK Soluciones Tecnológicas </span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto quas dolore expedita exercitationem tempore beatae
+                    pariatur, ad unde eligendi sit tenetur reprehenderit
+                    deleniti asperiores? Maiores ex sit voluptatum doloribus
+                    nulla?
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date"> 2019 - 2020 </span>
+                  <h4>
+                    Frontend Developer -
+                    <span> Universidad de Caldas </span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto quas dolore expedita exercitationem tempore beatae
+                    pariatur, ad unde eligendi sit tenetur reprehenderit
+                    deleniti asperiores? Maiores ex sit voluptatum doloribus
+                    nulla?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!------- End Experience Section -------->
           </div>
         </div>
       </div>
@@ -36,7 +122,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "app-info",
+  data() {
+    return {
+      disabled: true,
+    };
+  },
+  methods: {
+    seeInfo() {
+      this.disabled ? (this.disabled = false) : (this.disabled = true);
+      console.log(this.disabled, "información de disabled");
+    },
+  },
+};
 </script>
 
 <style></style>
