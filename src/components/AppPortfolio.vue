@@ -9,148 +9,45 @@
         </div>
 
         <div class="row">
-          <!-------------- PENDING REFACTORING WITH A COMPONENT -------------->
           <!------- Portfolio Items --------->
-          <div class="portfolio-item">
+          <div
+            class="portfolio-item"
+            v-for="projectInfo in this.projectsInfo"
+            :key="projectInfo.id"
+          >
             <div class="portfolio-item-thumbnail">
-              <img
-                src="@/assets/portfolio-home.png"
-                alt="portfolio item thumb"
-              />
+              <img :src="projectInfo.image" alt="portfolio item thumb" />
             </div>
-            <h3 class="portfolio-item-title">My Portfolio</h3>
+            <h3 class="portfolio-item-title">{{ projectInfo.name }}</h3>
             <div class="portfolio-item-details">
               <div class="pp-body">
                 <div class="description">
                   <p>
-                    The perfect space to get to know a little more about me and
-                    about my work.
+                    {{ projectInfo.englishDescription }}
                   </p>
                   <br />
                   <p>
-                    El espacio perfecto para conocer un poco más sobre mí y
-                    sobre mi trabajo.
+                    {{ projectInfo.spanishDescription }}
                   </p>
                 </div>
                 <div class="general-info">
                   <ul>
-                    <li>Created - <span> January 2022 </span></li>
-                    <li>Tecnologies used - <span> HTML, CSS, VueJs </span></li>
-                    <!-- <li>Objetive - <span> HTML, CSS... </span></li>
                     <li>
-                      View online -
-                      <span>
-                        <a href="#" target="_blank">www.algunacosa.com</a>
-                      </span>
-                    </li> -->
-                  </ul>
-                </div>
-                <app-button extraClass="btn view-project">
-                  <a
-                    href="https://lauravz-portfolio.netlify.app/"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </app-button>
-              </div>
-            </div>
-          </div>
-          <!------- End Portfolio Items --------->
-
-          <!------- Portfolio Items --------->
-          <div class="portfolio-item">
-            <div class="portfolio-item-thumbnail">
-              <img src="@/assets/movie-app.png" alt="portfolio item thumb" />
-            </div>
-            <h3 class="portfolio-item-title">Movie App</h3>
-            <div class="portfolio-item-details">
-              <div class="pp-body">
-                <div class="description">
-                  <p>
-                    You can search a specific movie that you want and see some
-                    information.
-                  </p>
-                  <br />
-                  <p>
-                    Puedes buscar una película específica que quieras y ver
-                    algunos detalles relacionados a ella.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span> December 2021 </span></li>
+                      Created - <span> {{ projectInfo.createdAt }} </span>
+                    </li>
                     <li>
                       Tecnologies used -
-                      <span> HTML, CSS, Nuxt JS and TMDB API </span>
+                      <span> {{ projectInfo.tecnologies }} </span>
                     </li>
-                    <!-- <li>Objetive - <span> HTML, CSS... </span></li>
-                    <li>
-                      View online -
-                      <span>
-                        <a href="#" target="_blank">www.algunacosa.com</a>
-                      </span>
-                    </li> -->
                   </ul>
                 </div>
                 <app-button extraClass="btn view-project">
-                  <a
-                    href="http://learning-with-movie-app.herokuapp.com/"
-                    target="_blank"
-                    >View Project</a
-                  >
+                  <a :href="projectInfo.url" target="_blank">View Project</a>
                 </app-button>
               </div>
             </div>
           </div>
           <!------- End Portfolio Items --------->
-
-          <!------- Portfolio Items --------->
-          <div class="portfolio-item">
-            <div class="portfolio-item-thumbnail">
-              <img src="@/assets/rent-app(2).png" alt="portfolio item thumb" />
-            </div>
-            <h3 class="portfolio-item-title">Rent App</h3>
-            <div class="portfolio-item-details">
-              <div class="pp-body">
-                <div class="description">
-                  <p>
-                    Project to practice responsive designs. Right now it's
-                    visual only, soon integration with Firebase to make it
-                    dynamic.
-                  </p>
-                  <br />
-                  <p>
-                    Proyecto para practicar diseños responsivos. Ahora mismo es
-                    sólo visual, pronto, integración con Firebase para hacerlo
-                    dinámico.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span> October 2021 </span></li>
-                    <li>
-                      Tecnologies used -
-                      <span>
-                        HTML, CSS, VueJs, PWA, Babel, Router, Vuex and Less.
-                      </span>
-                    </li>
-                    <!-- <li>Objetive - <span> HTML, CSS... </span></li>
-                    <li>
-                      View online -
-                      <span>
-                        <a href="#" target="_blank">www.algunacosa.com</a>
-                      </span>
-                    </li> -->
-                  </ul>
-                </div>
-                <app-button extraClass="btn view-project">
-                  View Project
-                </app-button>
-              </div>
-            </div>
-          </div>
-          <!------- End Portfolio Items --------->
-          <!-------------- PENDING REFACTORING WITH A COMPONENT -------------->
         </div>
       </div>
     </section>
@@ -179,6 +76,48 @@
 <script>
 export default {
   name: "app-portfolio",
+  data() {
+    return {
+      projectsInfo: [
+        {
+          id: 1,
+          name: "My Portfolio",
+          image: require("../assets/portfolio-home.png"),
+          englishDescription:
+            "You can search a specific movie that you want and see some information.",
+          spanishDescription:
+            "El espacio perfecto para conocer un poco más sobre mí y sobre mi trabajo.",
+          createdAt: "January 2022",
+          tecnologies: "HTML, CSS, VueJs, Vue Router",
+          url: "https://lauravz-portfolio.netlify.app/",
+        },
+        {
+          id: 2,
+          image: require("../assets/movie-app.png"),
+          name: "Movie App",
+          englishDescription:
+            "You can search a specific movie that you want and see some information.",
+          spanishDescription:
+            "Puedes buscar una película específica que quieras y ver algunos detalles relacionados a ella.",
+          createdAt: "December 2021",
+          tecnologies: "HTML, CSS, Nuxt JS, Axios and TMDB API",
+          url: "http://learning-with-movie-app.herokuapp.com/",
+        },
+        {
+          id: 3,
+          name: "Rent App",
+          image: require("../assets/rent-app(2).png"),
+          englishDescription:
+            "Project to practice responsive designs. Right now it's visual only, soon integration with Firebase to make it dynamic.",
+          spanishDescription:
+            "Proyecto para practicar diseños responsivos. Ahora mismo es sólo visual, pronto, integración con Firebase para hacerlo dinámico.",
+          createdAt: "October 2021",
+          tecnologies: "HTML, CSS, VueJs, PWA, Babel, Router, Vuex and Less.",
+          url: "http://learning-with-movie-app.herokuapp.com/",
+        },
+      ],
+    };
+  },
 };
 </script>
 
