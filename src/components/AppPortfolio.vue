@@ -9,7 +9,7 @@
         </div>
 
         <div class="row">
-          <!-------------- PENDING REFACTORING -------------->
+          <!-------------- PENDING REFACTORING WITH A COMPONENT -------------->
           <!------- Portfolio Items --------->
           <div class="portfolio-item">
             <div class="portfolio-item-thumbnail">
@@ -46,7 +46,11 @@
                   </ul>
                 </div>
                 <app-button extraClass="btn view-project">
-                  View Project
+                  <a
+                    href="https://lauravz-portfolio.netlify.app/"
+                    target="_blank"
+                    >View Project</a
+                  >
                 </app-button>
               </div>
             </div>
@@ -118,7 +122,7 @@
                   <p>
                     Proyecto para practicar diseños responsivos. Ahora mismo es
                     sólo visual, pronto, integración con Firebase para hacerlo
-                    dinámico. 
+                    dinámico.
                   </p>
                 </div>
                 <div class="general-info">
@@ -146,7 +150,7 @@
             </div>
           </div>
           <!------- End Portfolio Items --------->
-          <!-------------- PENDING REFACTORING -------------->
+          <!-------------- PENDING REFACTORING WITH A COMPONENT -------------->
         </div>
       </div>
     </section>
