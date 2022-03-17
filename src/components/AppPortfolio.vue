@@ -102,8 +102,9 @@ export default {
           spanishDescription:
             "Puedes buscar una película específica que quieras y ver algunos detalles relacionados a ella.",
           createdAt: "December 2021",
-          tecnologies: "HTML, CSS (responsive), Nuxt JS, Axios and TMDB API",
-          url: "http://learning-with-movie-app.herokuapp.com/",
+          tecnologies:
+            "HTML, CSS (responsive), Nuxt JS, Axios, TMDB API and and Continuous Deployment with Netlify",
+          url: "https://movie-nuxt-app.netlify.app/",
         },
 
         {
