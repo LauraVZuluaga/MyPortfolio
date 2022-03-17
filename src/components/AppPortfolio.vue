@@ -78,7 +78,34 @@ export default {
   name: "app-portfolio",
   data() {
     return {
+      //REFACTOR WITH VUEX
       projectsInfo: [
+        {
+          id: 1,
+          name: "Fire app",
+          image: require("../assets/fire-app.png"),
+          englishDescription:
+            "Visualize centralized static data, consume external data, add own vue libraries, to create a simple fire extinguisher rental system.",
+          spanishDescription:
+            "Visualizar datos estáticos centralizados, consumir datos externos, agregar librerías propias de vue, para crear un sistema sencillo de renta de extintores.",
+          createdAt: "March 2022",
+          tecnologies:
+            "HTML, CSS, Nuxt JS, Axios, Random user api and Continuous Deployment with Netlify",
+          url: "https://fire-app.netlify.app/",
+        },
+        {
+          id: 2,
+          image: require("../assets/movie-app.png"),
+          name: "Movie App",
+          englishDescription:
+            "You can search a specific movie that you want and see some information.",
+          spanishDescription:
+            "Puedes buscar una película específica que quieras y ver algunos detalles relacionados a ella.",
+          createdAt: "December 2021",
+          tecnologies: "HTML, CSS (responsive), Nuxt JS, Axios and TMDB API",
+          url: "http://learning-with-movie-app.herokuapp.com/",
+        },
+
         {
           id: 1,
           name: "My Portfolio",
@@ -90,30 +117,6 @@ export default {
           createdAt: "January 2022",
           tecnologies: "HTML, CSS, VueJs, Vue Router",
           url: "https://lauravz-portfolio.netlify.app/",
-        },
-        {
-          id: 2,
-          image: require("../assets/movie-app.png"),
-          name: "Movie App",
-          englishDescription:
-            "You can search a specific movie that you want and see some information.",
-          spanishDescription:
-            "Puedes buscar una película específica que quieras y ver algunos detalles relacionados a ella.",
-          createdAt: "December 2021",
-          tecnologies: "HTML, CSS, Nuxt JS, Axios and TMDB API",
-          url: "http://learning-with-movie-app.herokuapp.com/",
-        },
-        {
-          id: 3,
-          name: "Rent App",
-          image: require("../assets/rent-app(2).png"),
-          englishDescription:
-            "Project to practice responsive designs. Right now it's visual only, soon integration with Firebase to make it dynamic.",
-          spanishDescription:
-            "Proyecto para practicar diseños responsivos. Ahora mismo es sólo visual, pronto, integración con Firebase para hacerlo dinámico.",
-          createdAt: "October 2021",
-          tecnologies: "HTML, CSS, VueJs, PWA, Babel, Router, Vuex and Less.",
-          url: "http://learning-with-movie-app.herokuapp.com/",
         },
       ],
     };
