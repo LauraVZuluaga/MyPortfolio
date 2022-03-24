@@ -10,7 +10,8 @@
             <p
               style="margin-bottom: 21px !important; font-size: 12px !important"
             >
-              (Sorry for the inconvenience, I am still working on this project).
+              (Sorry for the inconvenience, I am modifying the project with
+              Tailwind for a better experience).
             </p>
             <a href="#" class="btn"
               ><router-link :to="{ name: 'About' }"
